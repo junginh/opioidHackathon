@@ -1,10 +1,10 @@
 # The Opioid Hackathon 2019 Track 5
-[More details about the Hackathon](https://www.theopioidhackathon.com/)
-![Photos of Winners](https://twitter.com/predictech/status/1195162633319534592/photo/1)
-
 The Hackathon is to present solutions to prevent increasing opioid overdose deaths in United States.
-It approaches solving problem in software application way or data science/ AI 
+It approaches solving problem in software application way or data science/ AI.
 The focus is on California, Orange county specifically, but to expand it's solution nationwide.
+
+[More details about the Hackathon](https://www.theopioidhackathon.com/)  
+[Photos of Winners](https://twitter.com/predictech/status/1195162633319534592/photo/1)
 
 ## Track 5
 > Real-time/prediction models and visualization tools to assist Orange County Public Health and UCI Health to prevent addiction and overdose. 
