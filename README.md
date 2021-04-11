@@ -45,22 +45,24 @@ Provide prediction model using Scikit-learn library
 3. return word frequency spreadsheet: Matrix.csv
 
 ### Economic.ipynb 
+- All of our models have high RMSE, but due to very small data size (see 0.)
 0. From Economic_Indicators.csv file(data, see link below) 2006 Q1 to 2019 Q2 (around 50 data)
-1. First, find relationsship of 7 economical features & 8 target values
-![7Features8targets](https://user-images.githubusercontent.com/45378526/114261026-3473ea00-9a13-11eb-97f0-f2d5681daf32.PNG)  
-2. plot 7*8 graphs
-  - Found out CAWHEA and ED Visits Rate look like a linear graph --> use linear regression to predict value  
+1. First, find correlation of 7 economical features & 8 target values  
+   ![7Features8targets](https://user-images.githubusercontent.com/45378526/114261026-3473ea00-9a13-11eb-97f0-f2d5681daf32.PNG)  
+2. plot 7*8 graphs  
+  - CAWHEA & ED Visits Rate: linear regression  
   ![ER_CAWHEA](https://user-images.githubusercontent.com/45378526/114264757-b66e0e00-9a27-11eb-88c4-21f7d4eba600.PNG)  
   ![ER_CAWHEA_result](https://user-images.githubusercontent.com/45378526/114264781-db628100-9a27-11eb-9458-1cee3db8780f.PNG)  
-  - CASTHPI and Hospitalizations Rate: linear regression  
-  ![hosp_casthpi](https://user-images.githubusercontent.com/45378526/114264954-eec21c00-9a28-11eb-8760-ba1fcaa62e51.PNG)  
-  ![hosp_casthpi_result](https://user-images.githubusercontent.com/45378526/114264965-06010980-9a29-11eb-949a-0b23ae6ad2ed.PNG)  
-
-
-
-
+  - CASTHPI & Hospitalizations Rate: linear regression similarly  
+3. Random forest regressor tested on Hospitalization rate with 7 features, extracted feature_importances_  
+   CASTHPI has .5756 feature importance (highest relevance)  
+   ![randomforest_result](https://user-images.githubusercontent.com/45378526/114269585-f393c980-9a42-11eb-92c8-28d121f6fe0e.PNG)  
+4. Lasso regression has high R^2 and high RMSE
+   
 ### Words.ipynb
 Randomly select 10,000 tweets in U.S. area  
+select 50 frequent words from Matrix.csv
+graph words against death data
 
 ### Other suggestions
 In future application: the tweets can be updated and fed into the algorithm to strenghten \
