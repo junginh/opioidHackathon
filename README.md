@@ -19,13 +19,13 @@ Provide prediction model using Scikit-learn library
 
 ### Data
 **7 economical features**  
-1. CANQGSP
-2. CAODIV
-3. CAOTOT
-4. CASTHPI All-Transactions House Price Index for California
-5. CAWHEA Health Care and Social Assistance Wages and Salaries in California
-6. CAWMIN
-7. UNEMPLOYCA  
+1. Total Gross Domestic Product by Industry for California (CANQGSP)
+2. Dividends, Interest and Rent in California (CAODIV)
+3. Total Personal Income in California (CAOTOT)
+4. All-Transactions House Price Index for California (CASTHPI)
+5. Health Care and Social Assistance Wages and Salaries in California (CAWHEA)
+6. Mining Wages and Salaries in California (CAWMIN)
+7. Unemployment Level for California (UNEMPLOYCA)  
 
 **8 possible targets**  
 1. Prescriptions Rate (annualized quarterly rate)
@@ -77,8 +77,7 @@ Economic data from:
 - https://fred.stlouisfed.org/series/CAOTOT  
 - https://fred.stlouisfed.org/series/CASTHPI  
 - https://fred.stlouisfed.org/series/CAWHEA  
-- https://fred.stlouisfed.org/series/CAMIN  
-- https://fred.stlouisfed.org/series/CAWTOT  
+- https://fred.stlouisfed.org/series/CAWMIN  
 - https://fred.stlouisfed.org/series/UNEMPLOYCA
 
 Any Opioid-Related Overdose:
