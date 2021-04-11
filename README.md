@@ -10,8 +10,8 @@ The focus is on California, Orange county specifically, but to expand it's solut
 > Real-time/prediction models and visualization tools to assist Orange County Public Health and UCI Health to prevent addiction and overdose. 
 
 ## Our solution
-Use tweets, 7 economical features, 8 possible targets  
-Provide prediction model using Scikit-learn library  
+- Use tweets and 7 economical features & 8 targets  
+- Provide prediction model using Scikit-learn library  
 
 ## Programmers: 
 - [Jungin Hong](https://www.linkedin.com/in/junginh/) 
