@@ -9,13 +9,13 @@ The focus is on California, Orange county specifically, but to expand it's solut
 ## Track 5
 > Real-time/prediction models and visualization tools to assist Orange County Public Health and UCI Health to prevent addiction and overdose. 
 
-## Programmers: 
-- [Jungin Hong](https://www.linkedin.com/in/junginh/) 
-- [Lanting Li](https://www.linkedin.com/in/lanting-li-a15883198/)
-
 ## Our solution
 Use tweets, 7 economical features, 8 possible targets  
 Provide prediction model using Scikit-learn library  
+
+## Programmers: 
+- [Jungin Hong](https://www.linkedin.com/in/junginh/) 
+- [Lanting Li](https://www.linkedin.com/in/lanting-li-a15883198/)
 
 ### Data
 **7 economical features**  
@@ -45,31 +45,39 @@ Provide prediction model using Scikit-learn library
 3. return word frequency spreadsheet: Matrix.csv
 
 ### Economic.ipynb 
-- All of our models have high RMSE, but due to very small data size (see 0.)
+*All of our models have high RMSE, but due to very small data size (see 0.)*
 0. From Economic_Indicators.csv file(data, see link below) 2006 Q1 to 2019 Q2 (around 50 data)
 1. First, find correlation of 7 economical features & 8 target values  
    ![7Features8targets](https://user-images.githubusercontent.com/45378526/114261026-3473ea00-9a13-11eb-97f0-f2d5681daf32.PNG)  
 2. plot 7*8 graphs  
-  - CAWHEA & ED Visits Rate: linear regression  
-  ![ER_CAWHEA](https://user-images.githubusercontent.com/45378526/114264757-b66e0e00-9a27-11eb-88c4-21f7d4eba600.PNG)  
-  ![ER_CAWHEA_result](https://user-images.githubusercontent.com/45378526/114264781-db628100-9a27-11eb-9458-1cee3db8780f.PNG)  
-  - CASTHPI & Hospitalizations Rate: linear regression similarly  
+   * CAWHEA & ED Visits Rate: linear regression  
+   ![ER_CAWHEA](https://user-images.githubusercontent.com/45378526/114264757-b66e0e00-9a27-11eb-88c4-21f7d4eba600.PNG)  
+
+   ![ER_CAWHEA_result](https://user-images.githubusercontent.com/45378526/114264781-db628100-9a27-11eb-9458-1cee3db8780f.PNG)  
+   * CASTHPI & Hospitalizations Rate: linear regression similarly  
 3. Random forest regressor tested on Hospitalization rate with 7 features, extracted feature_importances_  
    CASTHPI has .5756 feature importance (highest relevance)  
    ![randomforest_result](https://user-images.githubusercontent.com/45378526/114269585-f393c980-9a42-11eb-92c8-28d121f6fe0e.PNG)  
-4. Lasso regression has high R^2 and high RMSE
+4. Lasso regression has high R<sup>2</sup> and high RMSE
    
 ### Words.ipynb
-Randomly select 10,000 tweets in U.S. area  
-select 50 frequent words from Matrix.csv
-graph words against death data
+1. Randomly select 10,000 tweets in U.S. area  
+2. select 50 frequent words from Matrix.csv
+3. graph words against death data  
+4. Word "happy" plotted against Death counts, linear regression  
+   ![happy_linear](https://user-images.githubusercontent.com/45378526/114290187-94709c00-9ab8-11eb-8384-604b1a77ef55.PNG)  
+   ![happy_linear_result](https://user-images.githubusercontent.com/45378526/114290219-d7327400-9ab8-11eb-96f3-7e63053adcad.PNG)
+5. Random Forest Regression using all 50 vocabs  
+   ![WordsRandomforest_result](https://user-images.githubusercontent.com/45378526/114290240-0cd75d00-9ab9-11eb-9e94-437be7aa9d0e.PNG)
+6. Other regression models, low R<sup>2</sup> and extremely high RMSE
+
 
 ### Other suggestions
 In future application: the tweets can be updated and fed into the algorithm to strenghten \
 Further tweets contains information about the area \
 
 ### References
-*Tweets are from Professor _____ at UCI.* \
+*Tweets are from a professor at UCI.* \
 
 Economic data from:  
 - https://fred.stlouisfed.org/series/CANQGSP  
