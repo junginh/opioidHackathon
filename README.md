@@ -72,12 +72,16 @@ The focus is on California, Orange county specifically, but to expand it's solut
 6. Other regression models, low R<sup>2</sup> and extremely high RMSE
 
 
-### Other suggestions
-In future application: the tweets can be updated and fed into the algorithm to strenghten \
-Further tweets contains information about the area \
+### Other Suggestions & Points to Improve
+- lower high RSME: use other methods apart from regression [how to choose ML algorithms](https://www.kdnuggets.com/2020/05/guide-choose-right-machine-learning-algorithm.html)
+- larger data size
+- do not divide by total word count, this is incorrect  
+
+- In future application: the tweets can be updated and fed into the algorithm to strenghten  
+- Further tweets contains geographical information to track opioid usage areas
 
 ### References
-*Tweets are from a professor at UCI.* \
+*Tweets are from a professor at UCI.*  
 
 Economic data from:  
 - https://fred.stlouisfed.org/series/CANQGSP  
