@@ -5,7 +5,7 @@ The focus is on California, Orange county specifically, but to expand it's solut
 
 [More details about the Hackathon](https://www.theopioidhackathon.com/)  
 
-[Winners](https://predictiontechnology.ucla.edu/2019-opioid-hackathon/)
+[Winners and project description](https://predictiontechnology.ucla.edu/2019-opioid-hackathon/)
 
 [Photos of Winners](https://twitter.com/predictech/status/1195162633319534592/photo/1)
 
